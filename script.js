@@ -1,9 +1,9 @@
 function detectAndHighlight() {
   const codeInput = document.getElementById('codeInput').value;
-  //const { language, value: highlightedCode } = hljs.highlightAuto(codeInput);
-  //alert(`Detected language: ${language}`);
-  //document.getElementById('codeInput').value = highlightedCode;
-  //hljs.highlightElement(document.getElementById('codeInput'));
+  const { language, value: highlightedCode } = hljs.highlightAuto(codeInput);
+  alert(`Detected language: ${language}`);
+  document.getElementById('codeInput').value = highlightedCode;
+  hljs.highlightElement(document.getElementById('codeInput'));
   }
   
 
